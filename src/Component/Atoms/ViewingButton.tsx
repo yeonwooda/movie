@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Box from "@mui/material/Box";
-
+// 다음, 이전 버튼
 const ViewingButton = () => {
   return (
     <Box

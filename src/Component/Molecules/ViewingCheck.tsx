@@ -1,5 +1,6 @@
 import ViewingButton from "../Atoms/ViewingButton";
-
+import { Payment } from "../utils/util";
+// 영화명, *관, 시간, 금액
 const ViewingCheck = () => {
   return (
     <div className="flex flex-col w-60 h-60 rounded-xl bg-purple-300">
@@ -8,7 +9,10 @@ const ViewingCheck = () => {
       <span>날짜</span>
       <span>시간</span>
       <img className="w-fit h-fit" src="pilot.jpg" alt="" />
-      <span>결제금액 0원</span>
+      <span>
+        최종결제금액
+        <Payment price={10000} />
+      </span>
       <ViewingButton />
     </div>
   );

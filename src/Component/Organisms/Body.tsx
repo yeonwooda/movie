@@ -1,4 +1,10 @@
+import ViewingCheck from "../Molecules/ViewingCheck";
+
 const Body = () => {
-  return <div></div>;
+  return (
+    <div>
+      <ViewingCheck />
+    </div>
+  );
 };
 export default Body;

@@ -1,11 +1,10 @@
 import PersonnelButton from "./Component/Atoms/PersonnelButton";
-import ViewingButton from "./Component/Atoms/ViewingButton";
-import ViewingCheck from "./Component/Molecules/ViewingCheck";
+import Head from "./Component/Organisms/Heade";
 
 function App() {
   return (
-    <div className="App">
-      <ViewingCheck />
+    <div>
+      <Head />
     </div>
   );
 }
