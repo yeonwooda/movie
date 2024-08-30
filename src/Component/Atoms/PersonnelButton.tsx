@@ -3,17 +3,15 @@ import Button from "@mui/material/Button";
 import { useState } from "react";
 // - 0 + 버튼
 
-type PersonnelButtonProps = {
-  gallery?: string;
-};
-const PersonnelButton = ({ gallery }: PersonnelButtonProps) => {
-  const [num, setNum] = useState(0);
+const PersonnelButton = () => {
+  const [num, setNum] = useState<number>(0);
+
   const plusNum = () => {
-    setNum(num + 1);
+    setNum((prev) => prev + 1);
     num >= 2 ? setNum(2) : setNum(num + 1);
   };
   const miunsNum = () => {
-    setNum(num - 1);
+    setNum((prev) => prev - 1);
     num === 0 ? setNum(0) : setNum(num - 1);
   };
 
@@ -24,7 +22,9 @@ const PersonnelButton = ({ gallery }: PersonnelButtonProps) => {
           <Button variant="outlined" onClick={miunsNum}>
             -
           </Button>
+
           <span className="flex justify-center items-center">{num}</span>
+
           <Button variant="outlined" onClick={plusNum}>
             +
           </Button>

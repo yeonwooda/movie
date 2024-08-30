@@ -1,10 +1,11 @@
-import PersonnelButton from "./Component/Atoms/PersonnelButton";
+import Body from "./Component/Organisms/Body";
 import Head from "./Component/Organisms/Heade";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Head />
+      <Body />
     </div>
   );
 }

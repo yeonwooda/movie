@@ -9,6 +9,7 @@ const ViewingButton = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+
         "& > *": {
           m: 1,
         },
