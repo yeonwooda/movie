@@ -1,9 +1,9 @@
-import Body from "./Component/Organisms/Body";
-import Head from "./Component/Organisms/Heade";
+import Body from "./Compmemt/Organisms/Body";
+import Head from "./Compmemt/Organisms/Heade";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Head />
       <Body />
     </div>
